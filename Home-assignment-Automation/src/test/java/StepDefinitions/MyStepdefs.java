@@ -1,7 +1,5 @@
 package StepDefinitions;
 
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -13,9 +11,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
@@ -140,7 +135,6 @@ public class MyStepdefs {
                 System.out.println("Success, Last Name is required error message displayed");
                 conditionMet = true;
             }
-
             if (email.isEmpty() && confirmEmail.isEmpty()) {
                 WebElement errorEmail = driver.findElement(By.cssSelector("span[for='member_emailaddress'][generated='true']"));
                 String actualErrorMessage = errorEmail.getText();
@@ -165,7 +159,6 @@ public class MyStepdefs {
                 String actualErrorMessage = errorEmail.getText();
                 assertEquals("Email Address is required", actualErrorMessage);
                 System.out.println("Success, Email is required error message displayed");
-
                 conditionMet = true;
             }
             if (!email.equalsIgnoreCase(confirmEmail) && !email.isEmpty() && !confirmEmail.isEmpty()) {
@@ -241,6 +234,7 @@ public class MyStepdefs {
         } catch (Exception e) {
             System.out.println("An error occurred: " + e.getMessage());
         }
+        System.out.println("Scenario completed!");
     }
 }
 

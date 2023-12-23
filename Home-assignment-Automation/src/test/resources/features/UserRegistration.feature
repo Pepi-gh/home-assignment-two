@@ -18,9 +18,9 @@ Feature: User Registration
     Then I should see message
 
     Examples:
-      | day | month | year | firstname | lastname | email                    | confirmEmail             | password | confirmPassword | checkTerms | checkEthics | browser |
-      | 30  | Sep   | 1991 | Peter     | Babamov  | Pepi-xp+1337@hotmail.com | Pepi-xp+1337@hotmail.com | pass1337 | pass1337        | Yes        | Yes         | Chrome  |
-      | 30  | Sep   | 1991 |           |          |                          |                          |          |                 | NO         | nO          | edge    |
-      | 30  | Sep   | 1991 | Peter     |          | pepi-xp!@hotmail.com     | pepi-xp@hotmail.com      | pass123  | pass321         | yEs        |             | eDge    |
-      | 30  | Sep   | 1991 | Peter     | Babamov  | pepi-xp@hotmail.com      |                          |          | pass123         |            | YES         | ChRoMe  |
-      | 30  | Sep   | 1991 | Peter     | Babamov  |                          | pepi-xp@hotmail.com      | pass123  |                 | nO         |             | Chrome  |
+      | day | month | year | firstname | lastname | email                  | confirmEmail           | password | confirmPassword | checkTerms | checkEthics | browser |
+      | 30  | Sep   | 1991 | Peter     | Babamov  | Pepi-xp+16@hotmail.com | Pepi-xp+16@hotmail.com | pass1337 | pass1337        | Yes        | Yes         | Chrome  |
+      | 30  | Sep   | 1991 |           |          |                        |                        |          |                 | NO         | nO          | edge    |
+      | 30  | Sep   | 1991 | Peter     |          | pepi-xp!@hotmail.com   | pepi-xp@hotmail.com    | pass123  | pass321         | yEs        |             | eDge    |
+      | 30  | Sep   | 1991 | Peter     | Babamov  | pepi-xp@hotmail.com    |                        |          | pass123         |            | YES         | ChRoMe  |
+      | 30  | Sep   | 1991 | Peter     | Babamov  |                        | pepi-xp@hotmail.com    | pass123  |                 | nO         |             | Chrome  |
